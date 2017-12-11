@@ -42,7 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConnectedKChain.cs" />
+    <Compile Include="ConnectedParameters.cs" />
     <Compile Include="Extensions.cs" />
+    <Compile Include="NumeratedConnectedNode.cs" />
     <Compile Include="NumeratedNode.cs" />
     <Compile Include="Node.cs" />
     <Compile Include="Parameters.cs" />
