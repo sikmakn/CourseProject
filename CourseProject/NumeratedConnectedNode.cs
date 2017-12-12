@@ -8,5 +8,11 @@
 
         public NumeratedConnectedNode NodeX { get; set; }
         public NumeratedConnectedNode NodeY { get; set; }
+
+        public NumeratedConnectedNode(int k)
+        {
+            Node = new Node();
+            Parameters = new ConnectedParameters(k);
+        }
     }
 }

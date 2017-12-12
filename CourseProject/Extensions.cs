@@ -4,21 +4,21 @@ namespace CourseProject
 {
     public static class Extensions
     {
-        public static double Min(this double[][][][][] qz)
+        public static double Min(this double[][][][][] qz, int k)
         {
             var min = double.PositiveInfinity;
-            for (var a = 1; a < qz.Length; a++)
+            for (var i = 1; i <= k-1; i++)
             {
-                for (var b = a; b < qz[a].Length; b++)
+                for (var j = i; j <= k-1; j++)
                 {
-                    for (var c = 1; c < qz[a][b].Length; c++)
+                    for (var a = 1; a <= k-1; a++)
                     {
-                        for (var d = c; d < qz[a][b][c].Length; d++)
+                        for (var b = i; b <= k-1; b++)
                         {
-                            for (var e = 1; e < qz[a][b][c][d].Length; e++)
+                            for (var e = 0; e <=k-1; e++)
                             {
-                                if (qz[a][b][c][d][e] < min)
-                                    min = qz[a][b][c][d][e];
+                                if (qz[i][j][a][b][e] < min)
+                                    min = qz[i][j][a][b][e];
                             }
                         }
                     }

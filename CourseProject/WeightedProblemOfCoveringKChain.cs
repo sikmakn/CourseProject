@@ -34,7 +34,7 @@ namespace CourseProject
             var s = new double[4];
             s[0] = T[T.Count - 1].Parameters.L.Min();
             s[1] = T[T.Count - 1].Parameters.R.Min();
-            s[2] = T[T.Count - 1].Parameters.Q.Min();
+            s[2] = T[T.Count - 1].Parameters.Q.Min(k);
             return s.Min();
         }
 
